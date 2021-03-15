@@ -20,3 +20,19 @@ h1
 {
     font-family: 'Shrikhand', sans-serif;
 }
+
+h2
+{
+    font-size: $mainTitle-size;
+}
+
+h3
+{
+    font-size: $secTitle-size;
+}
+ 
+p
+{
+    font-size: $paragraph-size;
+    font-weight: lighter;
+}

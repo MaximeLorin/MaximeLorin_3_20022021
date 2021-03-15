@@ -1,0 +1,29 @@
+.restaurantCard
+{
+    @include pageMargin;
+    margin-bottom: 7%;
+    @include restauCards;
+    display: flex;
+    flex-direction: column;
+    &__new
+    {
+        position: relative;
+        top: 60px;
+        left: 260px;
+        margin: none;
+        @include newCard;
+    }
+    &__img
+    {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        @include imgRestauCards;
+    }
+    &__blckTxt
+    {
+        display: flex;
+        justify-content: space-between;
+        @include pageMargin;
+        margin-top: 17px;
+    }
+}

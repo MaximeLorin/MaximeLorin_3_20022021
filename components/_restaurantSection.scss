@@ -1,0 +1,11 @@
+#restaurantSection
+{
+    display: flex;
+    flex-direction: column;
+    background-color: $restaurant-color;
+    .restaurantTitle
+    {
+        @include pageMargin;
+        margin-top: 7%;
+    }
+}
