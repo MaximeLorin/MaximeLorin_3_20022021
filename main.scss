@@ -1,10 +1,7 @@
-$primary-color: blue;
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/fonctions";
 
-body
-{
-    background-color: $primary-color;
-}
-header
-{
-    background-color:$primary-color;
-}
+@import "base/base";
+@import "base/grids";
+@import "base/typography";
