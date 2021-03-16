@@ -11,3 +11,16 @@
     "trailerPage" 
     ;
 }
+
+.gridContainerMenu
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 63px 1420px 200px;
+    grid-template-areas:
+    "topPage"
+    "imageSection"
+    "menuSection"
+    "trailerPage" 
+    ;
+}

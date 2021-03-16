@@ -1,0 +1,7 @@
+.menus
+{
+    @include pageMargin;
+    background-color: $restaurant-color;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
