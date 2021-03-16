@@ -4,8 +4,12 @@ $secondary-color: #FF79DA;
 $tertiary-color: #99e2d0;
 $footer-color: #353535;
 $restaurant-color: #f6f6f6;
+$restaurant-color-darken:darken(#f6f6f6,5%);
 
 /*font sizes*/
-$mainTitle-size:1.8rem;
-$secTitle-size:1.15rem;
-$paragraph-size:1.1rem;
+$mainTitle-size:1.6rem;
+$secTitle-size:1.1rem;
+$paragraph-size:1.05rem;
+
+/*Box shadow*/
+$card-shadow: 3px 3px 5px rgb(202, 201, 201);

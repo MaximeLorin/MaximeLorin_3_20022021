@@ -23,7 +23,12 @@
     {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         @include pageMargin;
         margin-top: 17px;
+    }
+    &__blckTxt__icon
+    {
+        font-size: 1.8rem;
     }
 }

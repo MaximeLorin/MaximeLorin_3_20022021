@@ -9,5 +9,11 @@
 @import "layout/topPage";
 @import "layout/trailerPage";
 
-@import "components/_restaurantSection";
+@import "pages/reserveSection";
+@import "pages/howToSection";
+@import "pages/restaurantSection";
+
+@import "components/whereBlock";
+@import "components/exploreCard";
+@import "components/howToCard";
 @import "components/restaurantCard";

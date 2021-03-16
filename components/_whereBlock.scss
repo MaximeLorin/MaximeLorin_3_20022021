@@ -1,0 +1,12 @@
+.whereBlock
+{
+    @include itemCenter;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color:$restaurant-color-darken;
+    &__icon
+    {
+        padding-right: 15px;
+    }
+}
