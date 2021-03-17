@@ -2,9 +2,8 @@
 {
     background-color: white;
     box-shadow: $card-shadow;
-    border-radius: 20px;
+    border-radius: 15px;
     margin-bottom: 15px;
-    width: 90%;
     height: 65px;
     display: flex;
     flex-direction: column;
@@ -12,6 +11,7 @@
     &__title
     {
         margin-left: $cardMargin;
+        
     }
     &__dscrptn
     {
@@ -19,5 +19,13 @@
         margin-right: $cardMargin;
         display: flex;
         justify-content: space-between;
+        p 
+        {
+            font-size: 0.9rem;
+        }
+        &__price
+        {
+            font-weight: bolder;
+        }
     }
 }

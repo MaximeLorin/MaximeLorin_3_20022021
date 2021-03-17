@@ -1,22 +1,15 @@
 .restaurantCard
 {
     @include pageMargin;
-    margin-bottom: 7%;
+    margin-bottom: 20px;
     @include restauCards;
     display: flex;
     flex-direction: column;
-    &__new
-    {
-        position: relative;
-        top: 60px;
-        left: 260px;
-        margin: none;
-        @include newCard;
-    }
     &__img
     {
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        position: relative;
         @include imgRestauCards;
     }
     &__blckTxt
@@ -26,6 +19,18 @@
         align-items: center;
         @include pageMargin;
         margin-top: 17px;
+    }
+    .newCard
+    {
+        position: relative;
+    }
+    .newCard::after
+    {
+        content: 'Nouveau';
+        position: absolute;
+        top: -160px;
+        right:15px;
+        @include newCard;
     }
     &__blckTxt__icon
     {
