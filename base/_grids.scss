@@ -24,3 +24,17 @@
     "trailerPage" 
     ;
 }
+
+.gridContainerMenu2
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 63px 1470px 200px;
+    grid-template-areas:
+    "topPage"
+    "imageSection"
+    "menuSection"
+    "trailerPage" 
+    ;
+    background-color: $restaurant-color;
+}

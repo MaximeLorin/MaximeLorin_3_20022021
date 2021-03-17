@@ -1,6 +1,7 @@
 .topPage
 {
     @include itemCenter;
+    background-color: white;
     &__arrow
     {
         position: absolute;
@@ -9,6 +10,6 @@
     }
     &__arrow:hover
     {
-        
+        cursor: pointer;
     }
 }

@@ -15,7 +15,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 87%;
+        width: 88%;
         @include pageMargin;
         @include titleMargin;
         &__icon
@@ -91,6 +91,6 @@
     }
     .exploreCard
     {
-        margin-top: 25px;
+        margin-top: 20px;
     }
 }
