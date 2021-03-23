@@ -1,3 +1,43 @@
+@keyframes animCheck
+{
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+@keyframes animPrice
+{
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-50px);
+    }
+}
+@keyframes rotateCheck
+{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes revealCard
+{
+    0% {
+        transform: translateY(-35px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
 .menuCard
 {
     background-color: white;
@@ -6,26 +46,81 @@
     margin-bottom: 15px;
     height: 65px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    overflow: hidden;
+    opacity: 1;
+    animation-name: revealCard;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    .menuCardContainer
+    {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    &:hover 
+    {
+        .menuCard__dscrptn__price
+        {
+            animation-name: animPrice;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        .menuCard__select
+        {
+            animation-name: animCheck;
+            animation-duration: 0.2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            i 
+            {
+                animation-name: rotateCheck;
+                animation-duration: 0.7s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
     &__title
     {
+        text-overflow: ellipsis;
         margin-left: $cardMargin;
         
     }
     &__dscrptn
     {
+        transform-origin: left;
         margin-left: $cardMargin;
         margin-right: $cardMargin;
         display: flex;
+        width: 110%;
         justify-content: space-between;
         p 
         {
+            text-overflow: ellipsis;
             font-size: 0.9rem;
         }
         &__price
         {
             font-weight: bolder;
         }
+    }
+    &__select
+    {
+            transform-origin: right;
+            color: white;
+            background-color: $tertiary-color;
+            width: 20%;
+            transform: scaleX(0);
+            height: 65px;
+            @include itemCenter;
+            i 
+            {
+                transform: rotate(0deg);
+            }
+     
     }
 }
