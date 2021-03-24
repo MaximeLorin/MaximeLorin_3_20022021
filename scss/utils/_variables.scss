@@ -5,6 +5,7 @@ $tertiary-color: #99e2d0;
 $footer-color: #353535;
 $restaurant-color: #f6f6f6;
 $restaurant-color-darken:darken(#f6f6f6,5%);
+$card-gradiant:linear-gradient($secondary-color, $primary-color);
 
 /*font sizes*/
 $ohmy-size:1.8rem;

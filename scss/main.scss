@@ -1,6 +1,5 @@
 @import "utils/variables";
 @import "utils/mixins";
-@import "utils/fonctions";
 
 @import "base/base";
 @import "base/grids";
@@ -11,6 +10,7 @@
 @import "layout/menus";
 @import "layout/backgroundImg";
 
+@import "pages/loader";
 @import "pages/reserveSection";
 @import "pages/howToSection";
 @import "pages/restaurantSection";

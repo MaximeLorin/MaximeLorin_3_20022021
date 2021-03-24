@@ -34,6 +34,36 @@
     }
     &__blckTxt__icon
     {
+        position: relative;
         font-size: 1.8rem;
+        .fa-empty
+        {
+            opacity: 1;
+        }
+        .fa-gradiant
+        {
+            position: absolute;
+            left: 0;
+            top: 2px;
+            opacity: 0;
+            background:$card-gradiant;
+            -webkit-background-clip:text;
+            background-clip:text;
+            -webkit-text-fill-color: transparent;
+        }
+        &:hover
+        {
+            .fa-empty
+            {
+                opacity: 0;
+                transition: 0.7s;
+            }
+            .fa-gradiant
+            {
+                opacity: 1;
+                transition: 0.7s;
+            }
+        }  
     }
+    
 }

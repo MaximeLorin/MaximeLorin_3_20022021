@@ -10,19 +10,51 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    
     .menuTitle
     {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 88%;
+        position: relative;
         @include pageMargin;
         @include titleMargin;
         &__icon
         {
+            position: relative;
             font-size: 1.8rem;
+            &:hover
+            {
+                .fa-empty
+                {
+                    opacity: 0;
+                    transition: 0.7s;
+                }
+                .fa-gradiant
+                {
+                    opacity: 1;
+                    transition: 0.7s;
+                }
+            }
+            .fa-empty
+            {
+                opacity: 1;
+            }
+            .fa-gradiant
+            {
+                position: absolute;
+                left: 0;
+                top: 2px;
+                opacity: 0;
+                background:$card-gradiant;
+                -webkit-background-clip:text;
+                background-clip:text;
+                -webkit-text-fill-color: transparent;
+            }
         }
     }
+    
     .menuStarter
     {
         width: 90%;
