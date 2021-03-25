@@ -5,6 +5,11 @@
     @include restauCards;
     display: flex;
     flex-direction: column;
+    &:hover
+    {
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
     &__img
     {
         border-top-left-radius: 20px;

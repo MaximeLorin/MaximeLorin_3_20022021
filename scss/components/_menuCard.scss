@@ -49,45 +49,45 @@
     overflow: hidden;
     opacity: 0;
     animation-name: revealCard;
-    animation-duration: 3s;
+    animation-duration: 1.62s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     width: 100%;
     &--2
     {
-        animation-delay: 0.33s;
+        animation-delay: 0.18s;
     }
     &--3
     {
-        animation-delay: 0.66s;
+        animation-delay: 0.36s;
     }
     &--4
     {
-        animation-delay: 0.99s;
+        animation-delay: 0.54s;
     }
     &--5
     {
-        animation-delay: 1.32s;
+        animation-delay: 0.72s;
     }
     &--6
     {
-        animation-delay: 1.65s;
+        animation-delay: 0.90s;
     }
     &--7
     {
-        animation-delay: 1.98s;
+        animation-delay: 1.08s;
     }
     &--8
     {
-        animation-delay: 2.3s;
+        animation-delay: 1.26s;
     }
     &--9
     {
-        animation-delay: 2.63s;
+        animation-delay: 1.44s;
     }
     &--10
     {
-        animation-delay: 2.99s;
+        animation-delay: 1.59s;
     }
     .menuCardContainer
     {

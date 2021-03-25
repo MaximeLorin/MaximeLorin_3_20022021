@@ -8,4 +8,10 @@
     border-radius: 25px;
     @include itemCenter;
     box-shadow :$card-shadow;
+    &:hover
+    {
+        cursor: pointer;
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
 }
