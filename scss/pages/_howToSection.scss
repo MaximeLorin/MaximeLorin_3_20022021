@@ -1,5 +1,6 @@
 #howtoSection
 {
+    
     @include itemCenterColumn;
     .howtoTitle
     {
@@ -7,5 +8,13 @@
         width: 90%;
         margin-top: 50px;
         margin-bottom: 35px;
+    }
+    @include screen-desktop
+    {
+        @include desktopMargin;
+        .howtoTitle
+        {
+            justify-content: center;
+        }
     }
 }

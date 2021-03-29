@@ -3,4 +3,10 @@
     object-fit: cover;
     height: 265px;
     width: 100%;
+    @include screen-desktop
+    {
+        height: 50%;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
 }

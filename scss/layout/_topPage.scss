@@ -12,4 +12,8 @@
     {
         cursor: pointer;
     }
+    @include screen-desktop
+    {
+        position: -webkit-sticky;
+    }
 }

@@ -100,6 +100,7 @@
     }
     &:hover 
     {
+        cursor: pointer;
         .menuCard__dscrptn__price
         {
             animation-name: animPrice;
@@ -170,5 +171,15 @@
                 transform: rotate(0deg);
             }
      
+    }
+    @include screen-desktop
+    {
+        &__dscrptn
+        {
+            &__price
+            {
+                transform: translateX(100px);
+            }
+        }
     }
 }

@@ -25,4 +25,20 @@
             margin-right: 10px;
         }
     }
+    @include screen-desktop
+    {
+        .trailerTitle
+        {
+            margin-right: 50%;
+            margin-left: 50%;
+            font-size: 1.4rem;
+        }
+        .trailerMentions
+        {
+            display: flex;
+            justify-content: space-between;
+            @include desktopMargin;
+            margin-top: 30px;
+        }
+    }
 }

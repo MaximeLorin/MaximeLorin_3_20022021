@@ -7,7 +7,7 @@
     flex-direction: column;
     &:hover
     {
-        transform: scale(1.05);
+        transform: scale(1.02);
         transition: 0.3s;
     }
     &__img
@@ -69,6 +69,12 @@
                 transition: 0.7s;
             }
         }  
+    }
+    @include screen-desktop
+    {
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
     }
     
 }

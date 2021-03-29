@@ -8,7 +8,7 @@ $restaurant-color-darken:darken(#f6f6f6,5%);
 $card-gradiant:linear-gradient($secondary-color, $primary-color);
 
 /*font sizes*/
-$ohmy-size:1.8rem;
+$ohmy-size:2.1rem;
 $mainTitle-size:1.6rem;
 $secTitle-size:1.05rem;
 $paragraph-size:1.05rem;
@@ -19,3 +19,5 @@ $dishTitleMargin:20px;
 
 /*Box shadow*/
 $card-shadow: 3px 3px 5px rgb(202, 201, 201);
+
+$media-desktop:1100px;

@@ -60,4 +60,20 @@
         position: relative;
         font-weight: bold;
     }
+    @include screen-desktop
+    {
+        width: 60%;
+        height: 90px;
+        &__number
+        {
+            right: 0px;
+            left:50%;
+            top:-50%;
+        }
+        &__icon
+        {
+            margin-right: 15%;
+            margin-left: 10%;
+        }
+    }
 }
