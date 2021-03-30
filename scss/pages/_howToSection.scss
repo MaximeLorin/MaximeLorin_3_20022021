@@ -9,6 +9,15 @@
         margin-top: 50px;
         margin-bottom: 35px;
     }
+    @include screen-tablet
+    {
+        @include tabletMargin;
+        .howtoTitle
+        {
+            justify-content: center;
+        }
+    }
+
     @include screen-desktop
     {
         @include desktopMargin;

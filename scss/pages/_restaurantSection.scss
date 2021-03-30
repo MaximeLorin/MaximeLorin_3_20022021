@@ -9,9 +9,20 @@
         margin-top: 60px;
         margin-bottom: 45px;
     }
+    @include screen-tablet
+    {
+        .restaurantTitle
+        {
+            @include tabletMargin;
+        }
+        
+    }
+
     @include screen-desktop
     {
-        background-color:white;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        background-color:$restaurant-color;
         @include desktopMargin;
     }
 }

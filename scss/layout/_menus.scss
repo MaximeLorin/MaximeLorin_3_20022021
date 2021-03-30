@@ -1,7 +1,7 @@
 .menusPart2
 {
     position: absolute;
-    top: 280px;
+    top: 283px;
     width: 100%;
     height: 1250px;
     background-color: $restaurant-color;
@@ -26,6 +26,7 @@
             font-size: 1.8rem;
             &:hover
             {
+                cursor: pointer;
                 .fa-empty
                 {
                     opacity: 0;
@@ -49,7 +50,6 @@
                 opacity: 0;
                 background:$card-gradiant;
                 -webkit-background-clip:text;
-                background-clip:text;
                 -webkit-text-fill-color: transparent;
             }
         }
@@ -124,19 +124,29 @@
     }
     .exploreCard
     {
-        margin-top: 20px;
+        margin-top: -15px;
+    }
+    @include screen-tablet
+    {
+        .exploreCard
+        {
+            margin-top: 0px;
+        }
     }
     @include screen-desktop
     {
         @include desktopMargin;
-
+        .exploreCard
+        {
+            margin-top: -5px;
+        }
     }
 }
 
 .menusPart
 {
     position: absolute;
-    top: 280px;
+    top: 283px;
     width: 100%;
     height: 1200px;
     background-color: $restaurant-color;
@@ -161,6 +171,7 @@
             font-size: 1.8rem;
             &:hover
             {
+                cursor: pointer;
                 .fa-empty
                 {
                     opacity: 0;
@@ -184,7 +195,6 @@
                 opacity: 0;
                 background:$card-gradiant;
                 -webkit-background-clip:text;
-                background-clip:text;
                 -webkit-text-fill-color: transparent;
             }
         }
@@ -258,12 +268,11 @@
     }
     .exploreCard
     {
-        margin-top: 20px;
+        margin-top: 5px;
     }
 
     @include screen-desktop
     {
         @include desktopMargin;
-
     }
 }

@@ -25,6 +25,11 @@
     margin-left: 25%;
     margin-right: 25%;
 }
+@mixin tabletMargin {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
 
 @mixin restauCards
@@ -58,6 +63,12 @@
 
 @mixin screen-desktop{
     @media screen and (min-width: $media-desktop){
+        @content;
+    }
+}
+
+@mixin screen-tablet{
+    @media screen and (min-width: $media-mobile) and (max-width: $media-tablet){
         @content;
     }
 }

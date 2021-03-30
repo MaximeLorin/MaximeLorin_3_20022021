@@ -168,17 +168,36 @@
             @include itemCenter;
             i 
             {
+                font-size: 1.2rem;
                 transform: rotate(0deg);
             }
      
     }
-    @include screen-desktop
+
+    @include screen-tablet
     {
+        width: 85%;
+        margin-right: 7.5%;
+        margin-left: 7.5%;
         &__dscrptn
         {
             &__price
             {
                 transform: translateX(100px);
+            }
+        }
+    }
+
+    @include screen-desktop
+    {
+        width: 85%;
+        margin-right: 7.5%;
+        margin-left: 7.5%;
+        &__dscrptn
+        {
+            &__price
+            {
+                transform: translateX(90px);
             }
         }
     }

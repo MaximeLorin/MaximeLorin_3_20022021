@@ -1,5 +1,6 @@
 .restaurantCard
 {
+    background-color: white;
     @include pageMargin;
     margin-bottom: 20px;
     @include restauCards;
@@ -53,7 +54,6 @@
             opacity: 0;
             background:$card-gradiant;
             -webkit-background-clip:text;
-            background-clip:text;
             -webkit-text-fill-color: transparent;
         }
         &:hover
@@ -69,6 +69,10 @@
                 transition: 0.7s;
             }
         }  
+    }
+    @include screen-tablet
+    {
+        @include tabletMargin;
     }
     @include screen-desktop
     {

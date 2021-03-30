@@ -24,13 +24,31 @@
         {
             margin-right: 10px;
         }
+        &:hover
+        {
+            cursor: pointer;
+        }
     }
+    @include screen-tablet
+    {
+        .trailerTitle
+        {
+
+            @include itemCenter;
+        }
+        .trailerMentions
+        {
+            @include itemCenter;
+            flex-direction: column;
+        }
+        
+    }
+
     @include screen-desktop
     {
         .trailerTitle
         {
-            margin-right: 50%;
-            margin-left: 50%;
+            @include itemCenter;
             font-size: 1.4rem;
         }
         .trailerMentions
