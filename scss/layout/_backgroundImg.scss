@@ -1,0 +1,10 @@
+.backgroundImg
+{
+    object-fit: cover;
+    height: 265px;
+    width: 100%;
+    @include screen-desktop
+    {
+        height: 100%;
+    }
+}

@@ -1,0 +1,28 @@
+@keyframes blockedScreen
+{
+    0%{
+        overflow: hidden;
+    }
+    99%{
+        overflow: hidden;
+    }
+    100%{
+        overflow: scroll;
+    }
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+.gridContainer
+{
+    animation-name: blockedScreen;
+    animation-duration: 3.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+

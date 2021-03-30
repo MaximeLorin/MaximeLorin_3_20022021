@@ -1,0 +1,15 @@
+.topPage
+{
+    @include itemCenter;
+    background-color: white;
+    &__arrow
+    {
+        position: absolute;
+        left: 6%;
+        font-size: 1.4rem;
+    }
+    &__arrow:hover
+    {
+        cursor: pointer;
+    }
+}

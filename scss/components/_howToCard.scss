@@ -1,0 +1,79 @@
+.howToCard
+{
+    @include pageMargin;
+    width: 85%;
+    height: 75px;
+    background-color: $restaurant-color;
+    display:flex;
+    align-items: center;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: $card-shadow;
+    margin-bottom: 25px;
+    &:hover 
+    {
+        cursor: pointer;
+        .howToCard__bg
+        {
+            opacity: 1;
+            transition: 0.5s;
+        }
+        .howToCard__icon
+        {
+            color: $primary-color;
+            transition: 0.5s;
+        }
+    }
+    &__bg
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        top: 0;
+        left: 0;
+        background-color: lighten($primary-color, $amount: 35%);
+        opacity: 0;
+    }
+    
+    &__number
+    {
+        background-color: $primary-color;
+        color: white;
+        width: 25px;
+        height: 25px;
+        border-radius: 12.5px;
+        @include itemCenter;
+        position: relative;
+        right:12.5px;
+    }
+    &__icon
+    {
+        position: relative;
+        color: grey;
+        margin-right: 30px;
+        margin-left: 10px;
+        font-size: 1.2rem;
+    }
+    p
+    {   
+        position: relative;
+        font-weight: bold;
+    }
+    @include screen-desktop
+    {
+        width: 60%;
+        height: 90px;
+        &__number
+        {
+            right: 0px;
+            left:50%;
+            top:-50%;
+        }
+        &__icon
+        {
+            margin-right: 15%;
+            margin-left: 10%;
+        }
+    }
+}

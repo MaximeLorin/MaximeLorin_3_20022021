@@ -1,0 +1,28 @@
+#restaurantSection
+{
+    display: flex;
+    flex-direction: column;
+    background-color: $restaurant-color;
+    .restaurantTitle
+    {
+        @include pageMargin;
+        margin-top: 60px;
+        margin-bottom: 45px;
+    }
+    @include screen-tablet
+    {
+        .restaurantTitle
+        {
+            @include tabletMargin;
+        }
+        
+    }
+
+    @include screen-desktop
+    {
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        background-color:$restaurant-color;
+        @include desktopMargin;
+    }
+}

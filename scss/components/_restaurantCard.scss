@@ -1,0 +1,84 @@
+.restaurantCard
+{
+    background-color: white;
+    @include pageMargin;
+    margin-bottom: 20px;
+    @include restauCards;
+    display: flex;
+    flex-direction: column;
+    &:hover
+    {
+        transform: scale(1.02);
+        transition: 0.3s;
+    }
+    &__img
+    {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        position: relative;
+        @include imgRestauCards;
+    }
+    &__blckTxt
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include pageMargin;
+        margin-top: 17px;
+    }
+    .newCard
+    {
+        position: relative;
+    }
+    .newCard::after
+    {
+        content: 'Nouveau';
+        position: absolute;
+        top: -160px;
+        right:15px;
+        @include newCard;
+    }
+    &__blckTxt__icon
+    {
+        position: relative;
+        font-size: 1.8rem;
+        .fa-empty
+        {
+            opacity: 1;
+        }
+        .fa-gradiant
+        {
+            position: absolute;
+            left: 0;
+            top: 2px;
+            opacity: 0;
+            background:$card-gradiant;
+            -webkit-background-clip:text;
+            -webkit-text-fill-color: transparent;
+        }
+        &:hover
+        {
+            .fa-empty
+            {
+                opacity: 0;
+                transition: 0.7s;
+            }
+            .fa-gradiant
+            {
+                opacity: 1;
+                transition: 0.7s;
+            }
+        }  
+    }
+    @include screen-tablet
+    {
+        @include tabletMargin;
+    }
+    @include screen-desktop
+    {
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+    }
+    
+}

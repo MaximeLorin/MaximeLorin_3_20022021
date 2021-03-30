@@ -1,0 +1,39 @@
+.gridContainer
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 63px 335px 450px 1225px 200px;
+    grid-template-areas:
+    "topPage"
+    "reserveSection"
+    "howToSection"
+    "restaurantSection"
+    "trailerPage" 
+    ;
+}
+
+.gridContainerMenu
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 63px 1420px 200px;
+    grid-template-areas:
+    "topPage"
+    "imageSection"
+    "menuSection"
+    "trailerPage" 
+    ;
+}
+
+.gridContainerMenu2
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 63px 1470px 200px;
+    grid-template-areas:
+    "topPage"
+    "imageSection"
+    "menuSection"
+    "trailerPage" 
+    ;
+}
