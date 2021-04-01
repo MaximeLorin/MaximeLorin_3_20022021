@@ -12,6 +12,8 @@
     {
         cursor: pointer;
         transform: scale(1.05);
+        background: linear-gradient(lighten($secondary-color, $amount: 5%),lighten($primary-color, $amount: 5%));
+        box-shadow:5px 5px 7px rgb(139, 138, 138);
         transition: 0.3s;
     }
 }
